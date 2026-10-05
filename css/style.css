@@ -92,6 +92,11 @@ figcaption {
   position: relative;
   border: 1px solid var(--color-divider);
   border-radius: 0;
+  /* Flex/grid items default to a content-based automatic minimum size, which
+     lets a tall/narrow source image stretch an aspect-ratio'd figure taller
+     than intended. Zeroing it out makes aspect-ratio/max-height authoritative. */
+  min-width: 0;
+  min-height: 0;
 }
 .blueprint > .corner {
   position: absolute; width: 11px; height: 11px;

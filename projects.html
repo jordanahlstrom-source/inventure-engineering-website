@@ -76,7 +76,7 @@
   <div id="jenga-box" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:center;scroll-margin-top:88px">
     <figure class="blueprint" id="jenga-figure" style="margin:0;aspect-ratio:4/3;max-height:640px;background:#fff">
       <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <div id="jenga-still">
+      <div id="jenga-still" style="position:absolute;inset:0;width:100%;height:100%">
         <img src="assets/jenga-box.png" alt="Jenga Box and Stacker CAD render" style="width:100%;height:100%;object-fit:contain;padding:20px" />
         <button id="jenga-play" type="button" aria-label="Play Jenga Box demo video" style="position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:transparent;cursor:pointer;display:grid;place-items:center">
           <span style="width:66px;height:66px;border-radius:50%;background:color-mix(in srgb, var(--color-accent-900) 78%, transparent);display:grid;place-items:center;border:1px solid color-mix(in srgb, #fff 55%, transparent)">
@@ -85,7 +85,7 @@
           <span style="position:absolute;left:16px;bottom:16px;font-family:var(--font-heading);font-weight:600;font-size:14px;color:var(--color-accent-800)">Play demo</span>
         </button>
       </div>
-      <div id="jenga-video" style="display:none;width:100%;height:100%">
+      <div id="jenga-video" style="display:none;position:absolute;inset:0;width:100%;height:100%">
         <iframe data-src="https://drive.google.com/file/d/1H6m9AmEzt5kmTXADkWhiYNucK6-Vt8yv/preview" title="Jenga Box and Stacker demo video" allow="autoplay" allowfullscreen style="width:100%;height:100%;border:0;display:block"></iframe>
       </div>
     </figure>

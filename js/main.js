@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
     videoWrap.style.display = 'block';
     figure.style.background = '#000';
     figure.style.aspectRatio = '9/16';
+    // width:100% keeps this a definite size so the grid item doesn't fall back
+    // to content-based (here: zero, since still/video are position:absolute)
+    // sizing once aspect-ratio is applied — max-width then caps it.
+    figure.style.width = '100%';
     figure.style.maxWidth = '360px';
     figure.style.marginInline = 'auto';
   });
